@@ -1,0 +1,9 @@
+<div class="r-body">
+  <h2>Random Emoji</h2>
+  <div class="section">
+    <button (click)="onRandom()">
+      {{ emojiData ? emojiData.emoji : "Click" }}
+    </button>
+    <p>{{ emojiData ? emojiData.title : "Emoji Name" }}</p>
+  </div>
+</div>

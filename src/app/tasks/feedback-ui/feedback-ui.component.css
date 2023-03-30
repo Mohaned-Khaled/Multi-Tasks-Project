@@ -1,0 +1,77 @@
+.feedback-body {
+  background-color: lightcyan;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: darkgreen;
+  font-family: monospace;
+}
+
+.feedback-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  padding: 20px;
+  width: 85%;
+  max-width: 450px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.feedback-heading {
+  margin: 5px;
+  font-size: 30px;
+}
+
+.feedback-rating-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px 0;
+}
+
+.feedback-rating {
+  cursor: pointer;
+  padding: 10px;
+  margin: 10px 5px;
+  transition: all 0.3s ease;
+}
+
+.feedback-rating:hover,
+.active {
+  background-color: darkseagreen;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+small {
+  display: block;
+}
+
+img {
+  width: 40px;
+}
+
+.feedback-btn {
+  background-color: darkcyan;
+  color: aliceblue;
+  border: none;
+  margin: 10px;
+  border-radius: 4px;
+  padding: 12px 30px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.feedback-btn[disabled] {
+  opacity: 0.6;
+  cursor: no-drop;
+}
+
+.feedback-btn:hover {
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.feedback-btn:active {
+  transform: scale(0.95);
+}

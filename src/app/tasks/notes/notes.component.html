@@ -1,0 +1,16 @@
+<div class="n-body">
+  <h1>Note App</h1>
+  <p class="info-text">Double click on a note to remove it</p>
+  <div class="app">
+    <textarea
+      placeholder="Empty Note"
+      *ngFor="let note of myNotes"
+      (dblclick)="onRemove(note.id)"
+      [(ngModel)]="note.content"
+      class="note"
+      cols="30"
+      rows="10"
+    ></textarea>
+    <button class="btn" (click)="addNote()">+</button>
+  </div>
+</div>

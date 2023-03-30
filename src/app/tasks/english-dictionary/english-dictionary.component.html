@@ -1,0 +1,31 @@
+<div class="e-body">
+  <div class="e-container">
+    <h1 class="e-heading">English Dictionary</h1>
+    <form #f="ngForm" (ngSubmit)="onSubmit(f)">
+      <input
+        placeholder="Search a word"
+        type="text"
+        class="e-input"
+        ngModel
+        name="search"
+        required
+      />
+      <button class="e-btn" type="submit" [disabled]="!f.valid">
+        Translate
+      </button>
+    </form>
+    <p class="handle-loading" *ngIf="isLoading">
+      Searching The meaning of "{{ searchWord }}"
+    </p>
+    <p *ngIf="errorMsg && !isLoading">{{ errorMsg }}</p>
+    <div class="e-meaning-container" *ngIf="ourData && !isLoading && !errorMsg">
+      <p>
+        Word Title: <span class="e-title">{{ searchWord }}</span>
+      </p>
+      <p>
+        Meaning: <span class="e-meaining">{{ ourData.meaning }}</span>
+      </p>
+      <audio [src]="ourData.phonetics" controls></audio>
+    </div>
+  </div>
+</div>

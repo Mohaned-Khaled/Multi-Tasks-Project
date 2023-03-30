@@ -1,0 +1,51 @@
+<div class="c-body">
+  <div class="container">
+    <h1>Currency Convertor</h1>
+
+    <div class="currency-container">
+      <select
+        name="currency-first"
+        id="currency-first"
+        #firstCur
+        (change)="updateRate()"
+      >
+        <option value="AUD">AUD</option>
+        <option value="CAD">CAD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="INR">INR</option>
+        <option value="JPY">JPY</option>
+        <option value="USD" selected>USD</option>
+        <option value="EGP">EGP</option>
+      </select>
+      <input
+        type="number"
+        id="worth-first"
+        min="0"
+        value="1"
+        [(ngModel)]="myInput"
+        (input)="updateRate()"
+      />
+    </div>
+
+    <div class="currency-container">
+      <select
+        name="currency-second"
+        id="currency-second"
+        #secondRef
+        (change)="updateRate()"
+      >
+        <option value="AUD">AUD</option>
+        <option value="CAD">CAD</option>
+        <option value="EUR">EUR</option>
+        <option value="GBP">GBP</option>
+        <option value="INR">INR</option>
+        <option value="JPY">JPY</option>
+        <option value="USD">USD</option>
+        <option value="EGP" selected>EGP</option>
+      </select>
+      <input type="number" id="worth-first" [(ngModel)]="myCalc" disabled />
+    </div>
+    <p class="exhange-rate">{{ myDesc }}</p>
+  </div>
+</div>

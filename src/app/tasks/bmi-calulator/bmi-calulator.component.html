@@ -1,0 +1,37 @@
+<div class="b-body">
+  <div class="container">
+    <h1>Body Mass Index (BMI) Calculator</h1>
+    <form #f="ngForm" (ngSubmit)="onCompute()">
+      <div class="input-container">
+        <label for="height">Your Height (cm)</label>
+        <input
+          type="number"
+          id="height"
+          name="height"
+          required
+          ngModel
+          class="input"
+          placeholder="Enter your height in cm"
+        />
+      </div>
+      <div class="input-container">
+        <label for="weight">Your Weight (kg)</label>
+        <input
+          type="number"
+          id="weight"
+          name="weight"
+          required
+          ngModel
+          class="input"
+          placeholder="Enter your Weight in kg"
+        />
+      </div>
+      <button class="btn" [disabled]="!f.valid">Compute BMI</button>
+    </form>
+
+    <input type="number" disabled class="input" [(ngModel)]="bmiValue" />
+    <h4>
+      Weight Condition: <span class="weight-condition">{{ status }}</span>
+    </h4>
+  </div>
+</div>

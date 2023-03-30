@@ -1,0 +1,60 @@
+<div class="feedback-body" *ngIf="!isReviewed">
+  <div class="feedback-container">
+    <h1 class="feedback-heading">Feedback UI</h1>
+
+    <div class="feedback-rating-container">
+      <div
+        class="feedback-rating active"
+        [ngClass]="{ active: clickedEmoji === 'Unhappy' }"
+        (click)="onChange('Unhappy')"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/166/166527.png"
+          alt="Unhappy"
+        />
+        <small>Unhappy</small>
+      </div>
+
+      <div
+        class="feedback-rating"
+        [ngClass]="{ active: clickedEmoji === 'Neutral' }"
+        (click)="onChange('Neutral')"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/3508/3508576.png"
+          alt="Neutral"
+        />
+        <small>Neutral</small>
+      </div>
+
+      <div
+        class="feedback-rating"
+        [ngClass]="{ active: clickedEmoji === 'Satisfied' }"
+        (click)="onChange('Satisfied')"
+      >
+        <img
+          src="https://cdn-icons-png.flaticon.com/512/166/166538.png"
+          alt="Satisfied"
+        />
+        <small>Satisfied</small>
+      </div>
+    </div>
+
+    <button
+      class="feedback-btn"
+      [disabled]="!clickedEmoji"
+      (click)="onReview()"
+    >
+      Send Review
+    </button>
+  </div>
+</div>
+
+<div class="feedback-body" *ngIf="isReviewed">
+  <div class="feedback-container">
+    <strong>Thank you!</strong>
+    <br /><br />
+    <strong>Feedback: {{ clickedEmoji }}</strong>
+    <p>We'll use your feedback to improve our custom support</p>
+  </div>
+</div>

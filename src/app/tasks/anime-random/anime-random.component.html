@@ -1,0 +1,17 @@
+<div class="a-body">
+  <div class="container">
+    <h1>Anime Pics Generator</h1>
+    <button class="btn" (click)="onShowAndGenerate()" [disabled]="loading">
+      {{ loading ? "Loading..." : "Get Anime" }}
+    </button>
+
+    <div class="a-container" *ngIf="showContainer && animeData">
+      <img
+        *ngIf="!errorMsg"
+        [src]="loading ? '../../../assets/Rolling-1s-200px.svg' : animeData.url"
+        alt="error"
+      />
+      <h3 class="name">{{ loading ? "Updating..." : theMessage }}</h3>
+    </div>
+  </div>
+</div>

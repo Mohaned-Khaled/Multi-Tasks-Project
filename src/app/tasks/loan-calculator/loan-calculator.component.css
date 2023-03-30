@@ -1,0 +1,26 @@
+.l-body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(229, 225, 216);
+  font-family: "Courier New", Courier, monospace;
+  color: aliceblue;
+}
+
+.container {
+  background-color: darkcyan;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+input {
+  width: 100%;
+  font-size: 20px;
+  height: 30px;
+}
+
+.payment {
+  font-weight: 600;
+  font-size: 20px;
+}

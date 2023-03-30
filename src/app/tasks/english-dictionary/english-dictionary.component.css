@@ -1,0 +1,92 @@
+.e-body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: salmon;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.e-container {
+  background-color: rgba(255, 255, 255, 0.3);
+  padding: 28px;
+  border-radius: 8px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  width: 90%;
+  margin: 10px;
+  max-width: 450px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.e-heading {
+  font-size: 28px;
+}
+
+.e-input {
+  height: 53px;
+  text-align: center;
+  width: 300px;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  padding: 0;
+  margin: 18px 0;
+  border-radius: 5px;
+  outline: none;
+  caret-color: salmon;
+  transition: all 0.4s ease;
+}
+
+.e-input::placeholder {
+  transition: all 0.3s ease;
+}
+
+.e-input:focus {
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+.e-input:focus::placeholder {
+  opacity: 0;
+}
+
+.e-btn {
+  display: block;
+  margin-inline: auto;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  color: black;
+  padding: 12px 23px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  font-size: 17px;
+}
+
+.e-btn[disabled] {
+  opacity: 0.4;
+  cursor: no-drop;
+}
+
+.e-btn:hover[disabled] {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+  color: black;
+}
+
+.e-btn:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 4px rgba(255, 255, 255, 0.3);
+  color: white;
+}
+
+.e-meaning-container {
+}
+
+.e-title {
+}
+
+.e-meaning {
+}

@@ -1,0 +1,53 @@
+.c-body {
+  background-color: lightblue;
+  display: flex;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Courier New", Courier, monospace;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  background-color: darkcyan;
+  color: aliceblue;
+  padding: 10px;
+  border-radius: 5px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  margin: 0 14px;
+}
+
+.currency-container {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+select {
+  padding: 10px;
+}
+
+input {
+  border: 0;
+  outline: none;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: aliceblue;
+  text-align: right;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 22px;
+  width: 100%;
+}
+
+input:disabled {
+  opacity: 0.5;
+}
+
+.exhange-rate {
+  font-size: 16px;
+  font-weight: 600;
+}
