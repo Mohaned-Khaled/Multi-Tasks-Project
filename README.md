@@ -1,27 +1,35 @@
 # MultiTasks
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.1.2.\
+Multi-Tasks is an Angular project that consists of 10 small, independent projects. Each project is accessible using navbar.\
+Alot of projects using API.
 
-## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Available Projects
 
-## Code scaffolding
+The Multi-Tasks project consists of the following projects:\
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+1-FeedBack UI\
+2-English Dictionary\
+3-Anime Pics Generator\
+4-Random Emoji\
+5-Temperature Convertor\
+6-Body Mass Index (BMI) Calculator\
+7-Note App\
+8-Currency Convertor\
+9-Loan Calculator\
+10-Weight Convertor
+
+## Getting Started
+
+To run the project locally, follow these steps:
+
+1-Clone the repository to your local machine.\
+2-Install the dependencies using 'npm install'.\
+3-Run 'ng serve' to start the development server.\
+4-Navigate to 'http://localhost:4200/' to access the application.
 
 ## Build
 
 Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
 
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
